@@ -33,8 +33,10 @@ app.listen(port, () => {
 
 // <------------------------------Routers--------------------------->
 const student_auth_routes = require("./routers/student routers/authentication_router");
+const student_profile_routes = require("./routers/student routers/profile_router");
 
 app.use("/student/auth/", student_auth_routes);
+app.use("/student/profile/", student_profile_routes);
 
 
 // <------------------------------Routers END--------------------------->

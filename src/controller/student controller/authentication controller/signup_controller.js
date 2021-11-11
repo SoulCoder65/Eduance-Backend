@@ -39,7 +39,7 @@ exports.signup = async(req, res) => {
         student.token = token;
         student.save((er, std) => {
             if (er) {
-                return res.status(400).json({ message: responses.signup_un });
+                return res.status(401).json({ message: responses.signup_un });
             } else {
                 return res.status(201).json({
                     data: student,

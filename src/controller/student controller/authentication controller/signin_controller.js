@@ -21,6 +21,7 @@ exports.signin = async(req, res) => {
                 token: token,
             });
         }
+        // console.log(student)
         return res.status(401).json({ message: responses.invalid_c });
     } catch (error) {
         console.log(error);

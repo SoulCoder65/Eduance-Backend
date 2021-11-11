@@ -35,12 +35,6 @@ const StudentSchema = new mongoose.Schema({
     gender: {
         type: String,
     },
-    city: {
-        type: String,
-    },
-    state: {
-        type: String,
-    },
     profileurl: {
         type: String,
     },
